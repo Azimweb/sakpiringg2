@@ -1,0 +1,137 @@
+body {
+    font-family: 'Trirong', cursive;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+header {
+    background: linear-gradient(45deg, orange, red);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    font-family: 'Trirong', cursive;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Trirong', cursive;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro, .products, .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    display: inline-block;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: left;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-top: 0;
+    font-family: 'Trirong', cursive;
+}
+
+.product p {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Trirong', cursive;
+}
+
+footer {
+    background: linear-gradient(45deg, orange, red);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Trirong', cursive;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
+nav ul.showing {
+    display: flex;
+}
